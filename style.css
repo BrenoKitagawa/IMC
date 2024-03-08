@@ -1,0 +1,136 @@
+@charset "UTF-8";
+
+*{padding: 0px;
+margin: 0px;
+box-sizing: border-box;}
+
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+height: 100vh;
+background-color: #090e22;
+color: white;
+
+}
+
+
+.hide{
+    display: none !important;
+}
+
+
+
+#container{min-width: 400px;
+min-height: 400px;
+background: #1d1e33;
+display: flex;
+flex-direction: column;
+padding: 2rem;
+}
+
+#container h1{text-align: center;
+font-size: 1.5rem;
+margin-bottom: 2rem;}
+
+
+#formulario label{
+font-size: 1.3rem;
+}
+
+#formulario input{width: 100%;
+height: 2.5rem;
+margin: 0.8rem 0;
+border: none;
+padding: 1.5rem ;}
+
+
+#formulario #envio{display: flex;
+margin:1rem 0;
+gap: 20px;
+
+}
+
+#formulario #envio input{
+    background-color: gray;
+    font-weight: bolder;
+    border: none;
+    cursor: pointer;
+}
+
+#formulario input[type="submit"]{
+    background-color: red !important;
+    
+}
+
+/*table*/
+
+
+#resultado{
+    text-align: center;
+    display: flex;
+        flex-direction: column;
+
+}
+
+#imcNumber{
+    font-size: 2.4rem;
+    margin-bottom: 0.6rem;
+}
+
+#img-info{
+    font-size: 1.4rem;
+    color: #ccc;
+}
+
+#resultado h3{
+    margin-top: 1rem;
+    color: #ccc;
+}
+
+#imc-table{
+margin: 1.5rem 0;
+font-size: 0.8rem;
+}
+#table-header{
+    font-weight: bold;
+    color: #ccc;
+}
+
+#table-header,#table-data{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 0.5rem;
+    padding-bottom: 0.5rem;
+    border-bottom: 1px solid #444;
+}
+
+
+#table-header h4 ,#table-data p{
+flex: 1;
+}
+
+#table-header h4:nth-child(3)
+,#table-data p:nth-child(3){
+max-width:80px ;
+}
+
+#resultado button{padding: 1rem 3rem;
+color: white;
+background-color: red;
+border: none;
+font-size: 1.2rem;
+cursor: pointer;
+align-self: center;}
+
+
+.good{color: #12db24;}
+
+
+.low{color: #dbce12;}
+
+
+.midium{color: #db6212;}
+
+
+.high{color: #db1912;}

@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora IMC</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div id="container">
+        <div id="envio">
+            <h1>Calculadora de IMC</h1>
+            <form action="#" id="formulario">
+            <div id="altura">
+                <label for="AlturaCorporal">Altura:</label>
+                <input type="text" id="AlturaCorporal" placeholder="exemplo 1,75"  >
+            </div>
+            <div id="peso">
+                <label for="PescoCorporal">Peso:</label>
+                <input type="text" id="PescoCorporal" placeholder="exemplo 70,5">
+            </div>
+            <div id="envio">
+                <input type="submit" value="CALCULAR" id="calc">
+                <input type="reset" value="LIMPAR" id="clear">
+            </div>
+            </form>
+        </div>
+
+        <div id="resultado" class="hide">
+            <p id="imcNumber" >seu IMC:<span class="good">25</span></p>
+            <p id="imc-info"> situação atual: <span class="good">magreza</span></p>
+            <h3>confira as classificações:</h3>
+            <div id="imc-table">
+                <div id="table-header">
+                    <h4>IMC</h4>
+                    <h4> classificações</h4>
+                    <h4>obesidade</h4>
+                </div>
+
+                <div id="table-data">
+                    <p>menor que 18,5</p>
+                    <p> magreza</p>
+                    <p>0</p>
+                </div>
+            </div>
+            <button class="back"> Voltar</button>
+            
+        </div>
+        
+    </div>
+
+    <script src="imc.js"></script>
+    
+</body>
+</html>
